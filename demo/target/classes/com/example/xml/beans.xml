@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="persona" class="com.example.beans.Persona">
+		<property name="pais" ref="pais"></property>
+		<property name="id" value="id"></property>
+		<property name="nombre" value="nombre"></property>
+		<property name="apodo" value="apodo"></property>
+	</bean>
+	<bean id="pais" class="com.example.beans.Pais">
+		<property name="nombre" value="Mexico"></property>
+		<property name="ciudad" ref="ciudad"></property>
+	</bean>
+	<bean id="ciudad" class="com.example.beans.Ciudad">
+		<property name="nombre" value="Guadalajara"></property>
+	</bean>
+</beans>
