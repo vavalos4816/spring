@@ -7,9 +7,7 @@ import com.example.beans.Persona;
 public class App {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:com/example/xml/beans.xml");
-
 		Persona m = ac.getBean("persona", Persona.class);
 		System.out.println(m.getId() + " " + m.getNombre() + " " + m.getApodo() + " " + m.getPais().getNombre() + " " + m.getPais().getCiudad().getNombre());
 		((ConfigurableApplicationContext) ac).close();
