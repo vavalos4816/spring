@@ -4,7 +4,7 @@
 		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	<bean id="persona" class="com.example.beans.Persona">
 		<property name="pais" ref="pais"></property>
-		<property name="id" value="id"></property>
+		<property name="id" value="10"></property>
 		<property name="nombre" value="nombre"></property>
 		<property name="apodo" value="apodo"></property>
 	</bean>
